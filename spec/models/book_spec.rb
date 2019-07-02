@@ -15,7 +15,7 @@ RSpec.describe Book, type: :model do
   it { should validate_uniqueness_of(:isbn_10) }
   it { should validate_uniqueness_of(:isbn_13) }
 
-  it { should belong_to(:publisher) }
+  # it { should belong_to(:publisher) }
   it { should belong_to(:author) }
 
   context 'a valid book' do
