@@ -3,6 +3,7 @@ require 'factory_bot_rails'
 
 RSpec.describe Publisher, type: :model do
   it { should validate_presence_of(:name) }
+  it { should have_many(:books) }
 
   context 'with invalid params' do
     it 'is invalid with a nil name' do
